@@ -11,7 +11,12 @@ export function HomePage() {
   const dispatch = useDispatch();
 
   const handleThemeChange = event => {
-    const value = 'light';
+    let value = theme;
+    if (theme === 'light') {
+      value = 'dark';
+    } else {
+      value = 'light';
+    }
     saveTheme(value);
     dispatch(themeActions.changeTheme(value));
   };
