@@ -34,7 +34,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     background: ${({ theme }) => theme.body};
-    /* transition: all 0.5s; */
     color: ${({ theme }) => theme.text};
     height: 100%;
     width: 100%;
