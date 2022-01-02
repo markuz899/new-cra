@@ -39,15 +39,11 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     font-family: 'Montserrat';
-    font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: ${theme.font.size.normal};
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
-  }
-  body.fontLoaded {
-    font-family: 'Montserrat';
   }
   #root{
     width: 100%;
