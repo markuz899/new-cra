@@ -36,7 +36,6 @@ const Wrapper = styled.div`
   color: ${p => p.theme.text};
 
   &:nth-child(odd) {
-    background-color: ${p => p.theme.backgroundVariant};
   }
 `;
 

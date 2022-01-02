@@ -6,7 +6,6 @@ export const TextButton = styled.button`
   padding: 0;
   margin: 0;
   border: none;
-  color: ${p => p.theme.primary};
   cursor: pointer;
 
   &:hover {

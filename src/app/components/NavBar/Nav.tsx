@@ -34,7 +34,7 @@ const Wrapper = styled.nav`
 `;
 
 const Item = styled.a`
-  color: ${p => p.theme.primary};
+  color: ${p => p.theme.text};
   cursor: pointer;
   text-decoration: none;
   display: flex;

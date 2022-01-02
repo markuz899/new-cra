@@ -14,7 +14,7 @@ const Layout = ({ title, children }) => {
       </Helmet>
       <Layer>
         <Header />
-        <div>{children}</div>
+        <Body>{children}</Body>
         <Footer />
       </Layer>
     </LayoutContext.Provider>
@@ -23,4 +23,12 @@ const Layout = ({ title, children }) => {
 
 export default Layout;
 
-const Layer = styled.div``;
+const Layer = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+const Body = styled.div`
+  width: 100%;
+  height: 100%;
+`;

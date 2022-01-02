@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '../../containers/Layout';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,11 +15,13 @@ export function HomePage() {
     saveTheme(value);
     dispatch(themeActions.changeTheme(value));
   };
+
   return (
     <Layout title="Home">
       <span>HomePage container</span>
       <button onClick={handleThemeChange}>{theme}</button>
       <Link to="/root">Root</Link>
+      <p>{process.env.NODE_ENV}</p>
     </Layout>
   );
 }

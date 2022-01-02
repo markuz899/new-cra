@@ -56,7 +56,6 @@ const Wrapper = styled.div`
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
-        background-color: ${p => p.theme.background};
         content: '';
         border: 2px solid ${p => p.theme.border};
         transition: all 0.1s;
@@ -72,12 +71,10 @@ const Wrapper = styled.div`
         border-radius: 50%;
         top: 0.5625rem;
         left: 0.3125rem;
-        background-color: ${p => p.theme.background};
       }
 
       &:hover {
         &::before {
-          border-color: ${p => p.theme.primary};
         }
       }
     }
@@ -98,12 +95,6 @@ const Wrapper = styled.div`
     &:focus {
       + label {
         &::before {
-          box-shadow: 0 0 0 3px
-            ${p =>
-              p.theme.primary.replace(
-                /rgba?(\(\s*\d+\s*,\s*\d+\s*,\s*\d+)(?:\s*,.+?)?\)/,
-                'rgba$1,0.2)',
-              )};
         }
       }
     }
@@ -111,8 +102,6 @@ const Wrapper = styled.div`
     &:checked {
       + label {
         &::before {
-          background-color: ${p => p.theme.primary};
-          border-color: ${p => p.theme.primary};
         }
 
         &::after {
