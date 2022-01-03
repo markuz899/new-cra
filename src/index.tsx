@@ -23,6 +23,7 @@ import { configureAppStore } from 'store/configureStore';
 
 import { ThemeProvider } from 'styles/theme/ThemeProvider';
 
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from 'reportWebVitals';
 
 // Initialize languages
@@ -58,6 +59,11 @@ if (module.hot) {
     // No need to render the App again because i18next works with the hooks
   });
 }
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorkerRegistration.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
