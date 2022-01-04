@@ -8,6 +8,10 @@ export interface GithubRepoFormState {
   repositories: Repo[];
 }
 
+export interface DebugState {
+  debugger: boolean;
+}
+
 export enum RepoErrorType {
   RESPONSE_ERROR = 1,
   USER_NOT_FOUND = 2,
